@@ -9,8 +9,13 @@
 #define MINIMAXPLAYER_H
 
 #include "OthelloBoard.h"
+#include "BoardState.h"
 #include "Player.h"
 #include <vector>
+#include <stack>
+#include <cstdlib> 
+#include <iostream>
+using namespace std;
 
 /**
  * This class represents an AI player that uses the Minimax algorithm to play the game
@@ -35,6 +40,10 @@ public:
 	 * @param row Holds the return value for the row of the move
 	 */
     void get_move(OthelloBoard* b, int& col, int& row);
+	vector<OthelloBoard*> get_next_states(OthelloBoard* b, char player);
+	char toggle_player(char player);
+	BoardState* get_next_best_state(BoardState* state);
+	int minimax(BoardState* state, bool max);
 
     /**
      * @return A copy of the MinimaxPlayer object

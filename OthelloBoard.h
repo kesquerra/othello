@@ -77,6 +77,7 @@ public:
      * Checks if the game is over.
      */
     bool has_legal_moves_remaining(char symbol) const;
+    bool is_finished() const;
 
     /**
      * @param symbol The symbol representing a particular player.
