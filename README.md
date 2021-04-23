@@ -1,1 +1,1 @@
-# othello-minimax
+# Othello -- Minimax AI
