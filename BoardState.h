@@ -1,3 +1,10 @@
+/*
+ * BoardState.h
+ *
+ *  Created on: Apr 24, 2021
+ *      Author: kesquerra
+ */
+
 #ifndef BOARDSTATE_H
 #define BOARDSTATE_H
 
@@ -25,6 +32,7 @@ class BoardState {
         bool is_terminal(char player);
         bool is_winning(char player);
         bool is_a_tie(char player);
+        void set_minimax(char player);
 
 };
 

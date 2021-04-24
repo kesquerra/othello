@@ -1,8 +1,8 @@
 /*
  * MinimaxPlayer.h
  *
- *  Created on: Apr 17, 2015
- *      Author: wong
+ *  Created on: Apr 24, 2021
+ *      Author: kesquerra
  */
 
 #ifndef MINIMAXPLAYER_H
@@ -43,7 +43,7 @@ public:
 	vector<OthelloBoard*> get_next_states(OthelloBoard* b, char player);
 	char toggle_player(char player);
 	BoardState* get_next_best_state(BoardState* state);
-	int minimax(BoardState* state, bool max);
+	int minimax(BoardState* state);
 
     /**
      * @return A copy of the MinimaxPlayer object
